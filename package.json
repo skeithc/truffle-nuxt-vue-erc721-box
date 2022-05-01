@@ -8,6 +8,9 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.0.3",
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "dotenv": "^16.0.0",
+    "eth-gas-reporter": "^0.2.25",
     "nuxt": "3.0.0-rc.1",
     "stylus": "^0.57.0"
   }
