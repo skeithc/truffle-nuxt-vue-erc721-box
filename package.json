@@ -14,5 +14,10 @@
     "eth-gas-reporter": "^0.2.25",
     "nuxt": "3.0.0-rc.1",
     "stylus": "^0.57.0"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.1.8",
+    "pinia": "^2.0.13",
+    "vue": "^3.2.33"
   }
 }

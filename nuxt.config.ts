@@ -5,5 +5,6 @@ export default defineNuxtConfig({
   typescript: {
     shim: false
   },
+  buildModules: ['@pinia/nuxt'],
   modules: ['@nuxtjs/tailwindcss'],
 })
