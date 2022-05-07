@@ -1,8 +1,33 @@
 <script setup lang="ts">
 definePageMeta({ title: 'Mint' })
 
-function onMint() {
-  console.debug('Minting...');
+let wallet;
+let ethers;
+
+async function onMint() {
+  if (!process.client) {
+    return;
+  }
+
+  if (!wallet || !ethers) {
+    wallet = (await import('../store/wallet')).useWallet();
+    ethers = await import('ethers');
+  }
+
+  if (!wallet.provider) {
+    await wallet.connect();
+  }
+
+  const contractInfo = await $fetch('/api/contract');
+  const contract = new ethers.Contract(
+    contractInfo.address,
+    contractInfo.abi,
+    wallet.provider.getSigner()
+  );
+
+  const mintPrice = await contract.MINT_PRICE();
+
+  await contract.mint({ value: mintPrice });
 }
 </script>
 
