@@ -5,10 +5,6 @@ let wallet;
 let ethers;
 
 async function onMint() {
-  if (!process.client) {
-    return;
-  }
-
   if (!wallet || !ethers) {
     wallet = (await import('../store/wallet')).useWallet();
     ethers = await import('ethers');
