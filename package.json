@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.0.3",
-    "@openzeppelin/contracts": "^4.6.0",
+    "@openzeppelin/contracts": "^4.7.2",
     "@truffle/hdwallet-provider": "^2.0.8",
     "dotenv": "^16.0.0",
     "eth-gas-reporter": "^0.2.25",
