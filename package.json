@@ -7,18 +7,18 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^5.0.3",
+    "@nuxtjs/tailwindcss": "^5.3.3",
     "@openzeppelin/contracts": "^4.7.3",
-    "@truffle/hdwallet-provider": "^2.0.8",
-    "dotenv": "^16.0.0",
+    "@truffle/hdwallet-provider": "^2.0.14",
+    "dotenv": "^16.0.2",
     "eth-gas-reporter": "^0.2.25",
-    "nuxt": "3.0.0-rc.1",
-    "stylus": "^0.57.0"
+    "nuxt": "^3.0.0-rc.9",
+    "stylus": "^0.59.0"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.1.8",
-    "ethers": "^5.6.4",
-    "pinia": "^2.0.13",
-    "vue": "^3.2.33"
+    "@pinia/nuxt": "^0.4.2",
+    "ethers": "^5.7.0",
+    "pinia": "^2.0.22",
+    "vue": "^3.2.39"
   }
 }
